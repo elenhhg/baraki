@@ -32,7 +32,7 @@ export function About() {
             <span className="text-sm font-semibold tracking-wide text-red-600 uppercase">About Us</span>
           </div>
           <h2 className="mb-8 text-5xl font-bold text-white md:text-6xl animate-slide-in-left">
-            About <span className="text-red-600 animate-glow">Baraki</span>
+            About <span className="text-red-600 animate-glow">Noir Bar</span>
           </h2>
           <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-400 delay-300 animate-fade-in-up">
             A modern interpretation of traditional hospitality, where every detail tells a story of craftsmanship and
@@ -65,7 +65,7 @@ export function About() {
             <div>
               <h3 className="mb-6 text-4xl font-bold text-white animate-slide-in-left">Our Heritage</h3>
               <p className="mb-6 text-lg leading-relaxed text-gray-400 delay-700 animate-fade-in">
-                Baraki represents a fusion of cultural heritage and contemporary sophistication, where every element is
+                Noir Bar represents a fusion of cultural heritage and contemporary sophistication, where every element is
                 carefully curated to create an unforgettable experience.
               </p>
               <p className="text-lg leading-relaxed text-gray-400 animate-fade-in delay-900">

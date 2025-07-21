@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 animate-fade-in-up">
             <h3 className="mb-6 text-3xl font-bold text-red-600 transition-transform duration-300 cursor-pointer hover:scale-105">
-              Baraki
+              Noir Bar
             </h3>
             <p className="max-w-md mb-8 leading-relaxed text-gray-400 delay-200 animate-fade-in-up">
               Where tradition meets innovation. Experience the perfect blend of cultural heritage and modern

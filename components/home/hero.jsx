@@ -31,7 +31,7 @@ export function Hero() {
 
           <h1 className="mb-8 text-6xl font-bold leading-tight text-white md:text-8xl animate-slide-in-left">
             Welcome to
-            <span className="block mt-4 text-red-600 delay-300 animate-slide-in-right">Baraki</span>
+            <span className="block mt-4 text-red-600 delay-300 animate-slide-in-right">Noir Bar</span>
           </h1>
         </div>
 

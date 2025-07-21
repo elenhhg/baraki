@@ -38,7 +38,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 animate-slide-in-left">
             <h1 className="text-2xl font-bold tracking-tight text-white transition-all duration-300 transform cursor-pointer hover:text-red-400 hover:scale-105">
-              Baraki
+              Noir Bar
             </h1>
           </div>
 

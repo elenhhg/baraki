@@ -92,7 +92,7 @@ export function Contact() {
             </span>
           </div>
           <h2 className="mb-8 text-5xl font-bold text-white md:text-6xl animate-slide-in-left">
-            Visit <span className="text-red-600 animate-glow">Baraki</span>
+            Visit <span className="text-red-600 animate-glow">Noir Bar</span>
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-400 delay-300 animate-fade-in-up">
             Located in the heart of the city, we’re ready to welcome you to an extraordinary experience

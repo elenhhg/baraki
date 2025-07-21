@@ -5,7 +5,7 @@ import { Star, Utensils } from "lucide-react"
 export function Menu() {
   const cocktails = [
     {
-      name: "Baraki Signature",
+      name: "Noir Bar Signature",
       price: "$18",
       description: "House special blend with premium spirits and exotic spices",
       popular: true,
