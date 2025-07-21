@@ -105,7 +105,7 @@ export function Contact() {
             {[
               { icon: MapPin,  title: "Location",  content: "456 Cultural District\nMetropolitan City, MC 54321" },
               { icon: Phone,   title: "Phone",     content: "(555) 987‑6543" },
-              { icon: Mail,    title: "Email",     content: "hello@baraki.com" },
+              { icon: Mail,    title: "Email",     content: "hello@noirbar.com" },
               { icon: Clock,   title: "Hours",     content:
                 "Mon‑Thu  6 pm – 1 am\nFri‑Sat  6 pm – 2 :30 am\nSun  7 pm – 12 am" },
             ].map((item, i) => (

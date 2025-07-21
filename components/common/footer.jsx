@@ -50,7 +50,7 @@ export function Footer() {
           <div className="animate-fade-in-up delay-600">
             <h4 className="mb-6 text-lg font-bold text-white">Contact</h4>
             <div className="space-y-3 text-gray-400">
-              {["456 Cultural District", "Metropolitan City, MC 54321", "(555) 987-6543", "hello@baraki.com"].map(
+              {["456 Cultural District", "Metropolitan City, MC 54321", "(555) 987-6543", "hello@noirbar.com"].map(
                 (item, index) => (
                   <p key={index} className="animate-slide-in-up" style={{ animationDelay: `${(index + 7) * 100}ms` }}>
                     {item}
@@ -63,7 +63,7 @@ export function Footer() {
 
         <div className="pt-8 mt-12 delay-1000 border-t border-red-900/30 animate-fade-in-up">
           <div className="flex flex-col items-center justify-between md:flex-row">
-            <p className="text-sm text-gray-400">© 2024 Baraki. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2024 NoirBar. All rights reserved.</p>
             <div className="flex mt-4 space-x-6 md:mt-0">
               {["Privacy Policy", "Terms of Service"].map((item, index) => (
                 <a
