@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-red-900/30">
+    <section id="contact" className="py-24 bg-black">
       <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
@@ -79,6 +79,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   )
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/common/navbar"
 import { Hero } from "@/components/home/hero"
 import { About } from "@/components/home/about"

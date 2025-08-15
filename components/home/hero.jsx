@@ -1,67 +1,69 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+"use client"
+
+import { motion } from "framer-motion"
 
 export function Hero() {
   return (
-    <section id="home" className="relative flex items-center justify-center min-h-screen overflow-hidden bg-black">
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute w-32 h-32 rounded-full top-20 left-10 bg-red-600/10 blur-xl animate-pulse"></div>
-        <div className="absolute w-48 h-48 delay-1000 rounded-full bottom-20 right-10 bg-red-700/10 blur-2xl animate-pulse"></div>
-        <div className="absolute delay-500 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 w-96 h-96 bg-red-500/5 blur-3xl animate-pulse"></div>
-      </div>
-
-      {/* Floating particles */}
-      <div className="absolute inset-0">
-        <div className="absolute w-2 h-2 bg-red-600 rounded-full top-20 left-10 animate-float"></div>
-        <div className="absolute w-1 h-1 delay-1000 bg-white rounded-full top-40 right-20 animate-float"></div>
-        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-red-500 rounded-full animate-float delay-500"></div>
-        <div className="absolute w-1 h-1 bg-white rounded-full top-1/3 right-1/3 animate-float delay-2000"></div>
-      </div>
-
-      <div className="relative z-10 max-w-4xl px-6 mx-auto text-center lg:px-8">
-        <div className="animate-fade-in-up">
-          <div className="flex items-center justify-center mb-6 animate-slide-in-up">
-            <Sparkles className="w-8 h-8 mr-3 text-red-600 animate-pulse" />
-            <span className="text-sm font-semibold tracking-wider text-red-600 uppercase animate-glow">
-              Premium Experience
-            </span>
-            <Sparkles className="w-8 h-8 ml-3 text-red-600 animate-pulse" />
-          </div>
-
-          <h1 className="mb-8 text-6xl font-bold leading-tight text-white md:text-8xl animate-slide-in-left">
-            Welcome to
-            <span className="block mt-4 text-red-600 delay-300 animate-slide-in-right">Noir Bar</span>
+    <section
+      id="home"
+      className="relative flex flex-col items-center justify-center min-h-screen px-6 bg-black text-gray-900 font-sans"
+    >
+      {/* Content container */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="max-w-3xl text-center flex flex-col items-center space-y-10"
+      >
+        {/* Τίτλος */}
+        <div
+          className="relative p-15 rounded-lg overflow-hidden"
+          style={{
+            backgroundColor: "black",
+            boxShadow:
+              "0 0 5px #dc2640, 0 0 15px #dc2640, 0 0 30px rgba(220,38,64,0.6)",
+            display: "inline-block",
+          }}
+        >
+          <h1
+            className="text-3xl font-extrabold tracking-wide text-center relative z-10"
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
+          >
+            <motion.span
+              animate={{
+                scale: [1, 1.05, 1],
+                color: ["#dc2640", "#ffffff", "#dc2626"],
+                textShadow: ["0 0 5px #dc2626, 0 0 10px #dc2626, 0 0 20px #dc2626"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              style={{ display: "inline-block" }}
+            >
+              Noir Bar
+            </motion.span>
           </h1>
         </div>
 
-        <p className="max-w-2xl mx-auto mb-12 text-xl leading-relaxed text-gray-400 delay-500 md:text-2xl animate-fade-in-up">
-          Where tradition meets innovation. Experience authentic flavors and modern sophistication.
+        {/* Subtitle */}
+        <p className="mt-16 text-lg font-normal text-white max-w-lg mx-auto leading-relaxed">
+          Tradition meets innovation. Experience authentic flavors with a
+          modern touch.
         </p>
+      </motion.div>
 
-        <div className="flex flex-col items-center justify-center gap-6 delay-700 sm:flex-row animate-fade-in-up">
-          <Button
-            size="lg"
-            className="px-10 py-4 text-lg text-white transition-all duration-300 transform bg-red-700 hover:bg-red-800 hover:scale-105 hover:shadow-2xl hover:shadow-red-700/25 group"
-          >
-            Explore Menu
-            <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="px-10 py-4 text-lg text-white transition-all duration-300 transform bg-transparent border-white hover:bg-white hover:text-black hover:scale-105 hover:shadow-xl"
-          >
-            Book Your Table
-          </Button>
+      {/* Scroll indicator */}
+      <motion.div
+        animate={{ y: [0, 12, 0] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+      >
+        <div className="flex justify-center w-7 h-11 border-2 rounded-full border-gray-300 shadow-sm">
+          <div className="w-1.5 h-4 mt-2 bg-red-600 rounded-full animate-pulse" />
         </div>
-      </div>
-
-      <div className="absolute transform -translate-x-1/2 bottom-8 left-1/2 animate-bounce">
-        <div className="flex justify-center w-6 h-10 border-2 rounded-full border-white/50 backdrop-blur-sm">
-          <div className="w-1 h-3 mt-2 bg-white rounded-full animate-scroll-indicator"></div>
-        </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
